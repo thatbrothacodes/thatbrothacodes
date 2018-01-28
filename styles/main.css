@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "ChunkFiveWeb";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Chunkfive.otf") format("embedded-opentype"), 
+        url("../fonts/chunk-webfont.woff") format("woff"), 
+        url("../fonts/chunk-webfont.ttf") format("truetype");
+  }
+
 body, html {
     height: 100vh;
     width: 100vw;
@@ -12,47 +21,80 @@ body {
     background: #ffde01;
     word-wrap: break-word;
     line-height: 1.5;
-}
-
-.container {
-    width: 100%
+    align-items: center;
 }
 
 footer {
     display: flex;
     flex-direction: column; 
     height: 40px; 
-    border: solid 1px black; 
     align-items: flex-start;
+    max-width: 920px;
 }
 
 header {
     display: flex;
     flex-direction: column;
     background: #1c1c1c;
+    max-width: 920px;
     height: 160px; 
     align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+.inner-container {
+    max-width: 920px; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    color: #ccc;
 }
 
 main {
     display: flex; 
     flex: 1 0 auto; 
     align-items: flex-start;
+    max-width: 920px;
+    background: #1c1c1c;
+    padding: 40px;
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
     background: #ffeb01;
     min-height: 48px;
+    justify-content: flex-end;
+    max-width: 920px;
+}
+
+.navigation-item {
+    display: flex;
+}
+
+.navigation-link {
+    display: block;
+    text-decoration: none;
+    border-left: 1px solid #ffe000;
+    color: #886e04;
+    line-height: 22px;
+    padding: 13px 20px;
+    font-weight: 700;
 }
 
 .site-description {
     color: #ccc;
     font: 12px/18px ChunkFiveWeb,Georgia,serif;
-    padding: 10px 0 0;
+    padding: 10px 0 0 0;
     text-transform: uppercase;
+    margin: 0px;
 }
 
 .site-title {
     color: #ffde01;
     font: 48px/54px ChunkFiveWeb,Georgia,serif;
+    margin: 0px;
+    padding: 0px;
 }
