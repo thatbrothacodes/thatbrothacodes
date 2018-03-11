@@ -55,10 +55,11 @@ header {
 main {
     display: flex; 
     flex: 1 0 auto; 
-    align-items: flex-start;
+    align-items: center;
     max-width: 920px;
     background: #1c1c1c;
     padding: 40px;
+    flex-direction: column;
 }
 
 nav {
@@ -97,4 +98,12 @@ nav {
     font: 48px/54px ChunkFiveWeb,Georgia,serif;
     margin: 0px;
     padding: 0px;
+}
+
+.social-media-headline {
+    font: 36px/48px ChunkFiveWeb,Georgia,serif;
+}
+
+.social-media-logo-color {
+    color: #ffde01;
 }
