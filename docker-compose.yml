@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  thatbrothacodes-blog:
+    build: ./
+    container_name: thatbrothacodes-blog
+    image: thatbrothacodes-blog:1.1.0
+    ports:
+      - "80:80"
+  
+    
