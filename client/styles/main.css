@@ -85,6 +85,10 @@ nav {
     font-weight: 700;
 }
 
+.navigation-link-active {
+    background-color: #ffde01;
+}
+
 .site-description {
     color: #ccc;
     font: 12px/18px ChunkFiveWeb,Georgia,serif;
