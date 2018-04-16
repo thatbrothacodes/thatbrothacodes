@@ -1,0 +1,29 @@
+env:
+  global:
+  - secure: Il2SLiC2Z6Z1p2SbgtOV4Ti7RpJckgZDLU69H3lAOHw6HTI8tRNOjNEvgz5AwDoywbaTh3gfgUVZQd9acfj/ZYZjub3YGOrwnnJibJgQNgMOrQfN/JCu+zhkuST9VwJI+N8S3MdfQ5AsDV5P2E90RhK2gKEQ/48BlL5517krefpnM76fVv6n6zWkYrQKi5kGBrvRuoBRlGhlunV7WlF9MKc+g/0V77/KnxVAMIPsOzjtpv56n+9x4U8TidUUcV3h+hymkV1ntwAz65DkKPvO51cWKz6d/ioaX48NW5RoYdO8g6lviWiKyKvt1XfW9WR1ZP4v/1vyl8y712Ff27MGnvKQbGfl6nUXJ4JXl5Lyt821Z0/x+HTUgxYSc24tUqH4Nmf3epg+Lm65bbI+t5WLNxivfXH6D0ZqsQt7VgtAL90GNhMsleGLC8hLB22L3KeAKxKd2fayZd1IyBMLUgMqCwZtFwn78uy3XjGINZjBJ/q/098ooZ2SBbWbE1ax450+OhtOwa1TOQM6kf9PAToMTc+sPzesP9iJ8jwFCzFe/CzeSBjBxPO2RMGMb0KZQxJs3bet3PZx06dsL8A/oX3TQz32SPLl/96/+OhKBOYI19V2EGVbmHXhZzRR3LfxtsKLtVbUuCOca39dPNfN2STmebGsMKYne9H1rcpzo7k3Mn4=
+  - secure: moRgOSXUNMeEu5XWtFLUnc3oHuzfo2O2HmJ+monIltAxBKxvXIKB0jb4RtlhulqLg1VmivzZe7bBnXeXQrAMuwRPo7J3omaP+rRWc4MusyCJyNgVCi2fQ6f6kizpsLCJENuA14vp4apLcMmMg10e7m4AnMZSfvA0LxMCGS3hfC7lAOQ5XicanHLODa5NstMxLAPp9s40M9EmfJkwxbzr7KwQtGQXBO7TBgCDmIXjYr+GJS8wfrPGSyP9nVdI1fO1aheEKhdt3g3KWJ54w9C62c/+y2eAQOU3G1dCixmyGLbt/j+fF+Nhyvl+W9Hr+9InnxLAyp5f2vCNXy16F7sSwD78UhXIKHl8y+8yC7dSBw0b1hTnFKa/u7HhC3grZvIW5UI3kdbn2O75SnxZAAcCvIfX6D4aqdl/kTMyZMAb01p+RpVsp++ympuBiH+DQA04Vf9khxbxWmEJnhmrv+SEtmhQljWUP5vw9/Sxn9eQnmnZHRIIVGHtvpLx0/ERpcrI61RTx3sqb2Xa8hM0+QUeajoOyI3jK+vnuO3oQmJgoTyunWmZqZcMXLWt4hi3O6jvAVD0i6E6O2x+t7G5NPIwxj/KHiZP5BHQu4WCoZ3PWdWRC7qfPdneaVS/Q9gApSCibjPyMwRLrXHy4Sl7duLVRnx/qlbJZGbwY6v5bDHknLg=
+dist: trusty
+sudo: required
+addons:
+  chrome: stable
+  apt:
+    sources:
+    - deadsnakes
+    packages:
+    - python3.6
+    - python3-pip
+language: node_js
+services:
+- docker
+install:
+- pip3 install --user awscli
+script:
+- docker-compose build
+- docker tag thatbrothacodes-blog:1.2.0 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.2.0
+- eval $(aws ecr get-login --no-include-email)
+- docker push 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.2.0
+- aws ecs register-task-definition --cli-input-json file://thatbrothacodes-blog-def.json
+- aws ecs update-service --service thatbrothacodes-blog-service --task-definition thatbrothacodes-blog --cluster demo-web-apps
+
+# aws ecr create-repository --repository-name thatbrothacodes-blog
+# aws ecs create-service --cluster demo-web-apps --service-name thatbrothacodes-blog-service --task-definition thatbrothacodes-blog --desired-count 1 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-ae51f9a1,subnet-462de70c],securityGroups=[sg-e5eee493],assignPublicIp=ENABLED}" 
