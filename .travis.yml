@@ -1,7 +1,7 @@
 env:
   global:
-  - secure: Il2SLiC2Z6Z1p2SbgtOV4Ti7RpJckgZDLU69H3lAOHw6HTI8tRNOjNEvgz5AwDoywbaTh3gfgUVZQd9acfj/ZYZjub3YGOrwnnJibJgQNgMOrQfN/JCu+zhkuST9VwJI+N8S3MdfQ5AsDV5P2E90RhK2gKEQ/48BlL5517krefpnM76fVv6n6zWkYrQKi5kGBrvRuoBRlGhlunV7WlF9MKc+g/0V77/KnxVAMIPsOzjtpv56n+9x4U8TidUUcV3h+hymkV1ntwAz65DkKPvO51cWKz6d/ioaX48NW5RoYdO8g6lviWiKyKvt1XfW9WR1ZP4v/1vyl8y712Ff27MGnvKQbGfl6nUXJ4JXl5Lyt821Z0/x+HTUgxYSc24tUqH4Nmf3epg+Lm65bbI+t5WLNxivfXH6D0ZqsQt7VgtAL90GNhMsleGLC8hLB22L3KeAKxKd2fayZd1IyBMLUgMqCwZtFwn78uy3XjGINZjBJ/q/098ooZ2SBbWbE1ax450+OhtOwa1TOQM6kf9PAToMTc+sPzesP9iJ8jwFCzFe/CzeSBjBxPO2RMGMb0KZQxJs3bet3PZx06dsL8A/oX3TQz32SPLl/96/+OhKBOYI19V2EGVbmHXhZzRR3LfxtsKLtVbUuCOca39dPNfN2STmebGsMKYne9H1rcpzo7k3Mn4=
-  - secure: moRgOSXUNMeEu5XWtFLUnc3oHuzfo2O2HmJ+monIltAxBKxvXIKB0jb4RtlhulqLg1VmivzZe7bBnXeXQrAMuwRPo7J3omaP+rRWc4MusyCJyNgVCi2fQ6f6kizpsLCJENuA14vp4apLcMmMg10e7m4AnMZSfvA0LxMCGS3hfC7lAOQ5XicanHLODa5NstMxLAPp9s40M9EmfJkwxbzr7KwQtGQXBO7TBgCDmIXjYr+GJS8wfrPGSyP9nVdI1fO1aheEKhdt3g3KWJ54w9C62c/+y2eAQOU3G1dCixmyGLbt/j+fF+Nhyvl+W9Hr+9InnxLAyp5f2vCNXy16F7sSwD78UhXIKHl8y+8yC7dSBw0b1hTnFKa/u7HhC3grZvIW5UI3kdbn2O75SnxZAAcCvIfX6D4aqdl/kTMyZMAb01p+RpVsp++ympuBiH+DQA04Vf9khxbxWmEJnhmrv+SEtmhQljWUP5vw9/Sxn9eQnmnZHRIIVGHtvpLx0/ERpcrI61RTx3sqb2Xa8hM0+QUeajoOyI3jK+vnuO3oQmJgoTyunWmZqZcMXLWt4hi3O6jvAVD0i6E6O2x+t7G5NPIwxj/KHiZP5BHQu4WCoZ3PWdWRC7qfPdneaVS/Q9gApSCibjPyMwRLrXHy4Sl7duLVRnx/qlbJZGbwY6v5bDHknLg=
+  - secure: UyhJm7fJ8RoP6LCfTjuudZogLlc6TA60DlJFS8MaJ76v8EVw9al54a7laYmLP8Ez94NLj33xwkGXx4jI3HcvZ4i8RS+R3KObCsGQHo0SmtxHtiQsiQ9vdSqjY9bccowhzuc6tZ7MpZBzkxiAjL3zNDmgyLy4ZQo0yHghTGAsuabpUuDm3UhkfPmvHZq9MM/lJLp6etkgLqYKi+fVC9Ir2GfGnPdaDsc6JFfbKnNH7X7fS9mJ6MSyUwYs6L/QcE3f73OtzACJWwukso8gtUdLLCM90iZQydQv/6W1rLce8lEONffUA6pfPKVAdLHKgJ707WGcjPPRROzMAM6GrKZcBel22Vy1MhYTXfZzon8XeIRRkFDCU821J3enf7Qs1Xq4nGBp+PJmW60MENlW4LjI1BbRqE0il2UtxFTPZ7dExGVpKJu//CQLfQTJAKTB3CD9eLEFKNu1Z/wKfVl7ahbgC11XNrmwHm8VU+JA8UiQkv3zpFZaR08ZZdXKrwTlTiqKI8QgmGv0htVnKqgLE2EiuyxviXC9BPPfzuGLLeNHXahPWF8BtUOvgEOHCRG6uAEzbrXsvIPY6cFmwbRmoHsI+TZ4bjQVi6tXf1qu9hs8MNWTuT6OJUxATg5yN8IOHU3s86Gxy3nl92oD0TNkS1I3rB44tRt6b/ctwSNnNdsmWeI=
+  - secure: uK+SrpMu4H5+tbrZ3Css/a9NQFdTjGFR6213y1ZwAvLuvV73EsL99ZDO07FrgWj4KJ4w0mzXfSqNeHfuBzpCZxXIS2L2V97JvXlCVKjU8yrLEPU6rghmVn+npBIHulAKx9dQv2Yj0u6+HB0Kg8+H4HBtWpqziYvaEVbnGd6nVgfoyc/nbduzeZ5NqhLvccfE5U086ei7Eq6BpFYVh80TwvUmuHxFpotw1IT9xh5Q4xuklYcJNzhmT/fDT7/1mjPps9KK1EgGI8cS9VfrcH3Kv/Q/0Y6+OxmSeO9UPGiVOnihx8QkATZDKmiowZfcIAjSbC6Ulw0uHIUc96p/tLm4juQGHv87iBbGJJ71oZUEaf+p02thvr/OuqTmueo1uB3e9vyK3rhaluv8REwboTckq+z+Pm8EvXd8PtQR8wDvm8drGvSON774xgJihBimoUsdQhnPP7eJqvDUIPoqxcg5dJ23nUaDrF4mtnwow/PyD6AAxgTNy2JYf60BrT/oM2EIh+eNE5+VRymb8WIyvWbTYuIMLveyAWNxhRWLDm3FmI4iNPULl7FG9EZWYhMVPBhdo2bOWL/yAkmEjyfaTVy75Soh23vUs6fg6BdDwnqsJZfbuasMd/rvsGL+3pLgPxDFoDrB7enp6+JxC6vj93mEcRK3N+grCa+BQFYoLiWA/HQ=
 dist: trusty
 sudo: required
 addons:
@@ -19,11 +19,8 @@ install:
 - pip3 install --user awscli
 script:
 - docker-compose build
-- docker tag thatbrothacodes-blog:1.3.0 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.3.0
+- docker tag thatbrothacodes-blog:1.6.0 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.6.0
 - eval $(aws ecr get-login --no-include-email)
-- docker push 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.3.0
-- aws ecs register-task-definition --cli-input-json file://thatbrothacodes-blog-def.json
-- aws ecs update-service --service thatbrothacodes-blog-service --task-definition thatbrothacodes-blog --cluster demo-web-apps
-
-# aws ecr create-repository --repository-name thatbrothacodes-blog
-# aws ecs create-service --cluster demo-web-apps --service-name thatbrothacodes-blog-service --task-definition thatbrothacodes-blog --desired-count 1 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-ae51f9a1,subnet-462de70c],securityGroups=[sg-e5eee493],assignPublicIp=ENABLED}" 
+- docker push 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.6.0
+- aws ecs register-task-definition --cli-input-json file://ecs-task-def.json
+- aws ecs update-service --service thatbrothacodes-blog-service --task-definition thatbrothacodes-blog-task-def --cluster demo-web-apps

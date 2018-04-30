@@ -4,31 +4,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Thatbrothacodes | Software Development From a Brotha's Perspective</title>
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <title>thatbrothacodes | Software Development From a Brotha's Perspective</title>
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/fa-svg-with-js.css">
         <script src="scripts/jquery-3.2.1.min.js"></script>
         <script src="scripts/bootstrap.min.js"></script>
+        <script defer src="scripts/fontawesome-all.js"></script>
+        <script>
+            $(function() {
+                $('.menu-toggle').click(function(e) {
+                    e.preventDefault();
+                    $('.navigation-main').toggleClass('toggled-on');
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="inner-container">
-            <nav>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://thatbrothacodes.com">Home</a>
+            <div class="navigation-main">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
                 </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-bio/">Bio</a>
+                <div>
+                    <ul class="nav-menu">
+                        <li>
+                            <a class="navigation-link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-bio/" >Bio</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com">Blog</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="demos.html">Demos</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-projects/">Projects</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com">Blog</a>
-                </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="demos.html">Demos</a>
-                </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-projects/">Projects</a>
-                </div>
-            </nav>
+            </div>
             <header>
                 <h1 class="site-title">thatbrothacodes</h1>
                 <h2 class="site-description">Software Development From a Brotha's Perspective</h2>

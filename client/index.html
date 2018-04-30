@@ -5,32 +5,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>thatbrothacodes | Software Development From a Brotha's Perspective</title>
-
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/fa-svg-with-js.css">
         <script src="scripts/jquery-3.2.1.min.js"></script>
         <script src="scripts/bootstrap.min.js"></script>
         <script defer src="scripts/fontawesome-all.js"></script>
+        <script>
+            $(function() {
+                $('.menu-toggle').click(function(e) {
+                    e.preventDefault();
+                    $('.navigation-main').toggleClass('toggled-on');
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="inner-container">
-            <nav>
-                <div class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="http://thatbrothacodes.com" >Home</a>
+            <div class="navigation-main">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
                 </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-bio/" >Bio</a>
+                <div>
+                    <ul class="nav-menu">
+                        <li>
+                            <a class="navigation-link navigation-link-active" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-bio/" >Bio</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com">Blog</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="demos.html">Demos</a>
+                        </li>
+                        <li>
+                            <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-projects/">Projects</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com">Blog</a>
-                </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="demos.html">Demos</a>
-                </div>
-                <div class="navigation-item">
-                    <a class="navigation-link" href="http://blog.thatbrothacodes.com/that-brotha-codes-projects/">Projects</a>
-                </div>
-            </nav>
+            </div>
             <header>
                 <h1 class="site-title">thatbrothacodes</h1>
                 <h2 class="site-description">Software Development From a Brotha's Perspective</h2>
@@ -41,7 +56,7 @@
                 </div>
                 <div style="display: flex; flex: 1 0 auto; width: 100%; justify-content: center; margin-top: 40px;">
                     <h4 style="text-align: center;">
-                        I'm just one of several African American developers in the world. I would love to conect with all races, ages and genders on software development.
+                        I'm just one of several African American developers in the world. I would love to connect with all races, ages and genders on software development.
                         As we those of us who work in the industry it isn't just about what you know, but who you know. I'm hoping that this site not only allows you to see
                         my talent, but my passion and my willingness to learn and teach others. Come join me on this journey of life, liberty and the pursuit of happiness.
                     </h4>
