@@ -19,8 +19,8 @@ install:
 - pip3 install --user awscli
 script:
 - docker-compose build
-- docker tag thatbrothacodes-blog:1.7.0 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.7.0
+- docker tag thatbrothacodes-blog:1.8.0 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.8.0
 - eval $(aws ecr get-login --no-include-email)
-- docker push 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.7.0
+- docker push 826109606486.dkr.ecr.us-east-1.amazonaws.com/thatbrothacodes-blog:1.8.0
 - aws ecs register-task-definition --cli-input-json file://ecs-task-def.json
 - aws ecs update-service --service thatbrothacodes-blog-service --task-definition thatbrothacodes-blog-task-def --cluster demo-web-apps
