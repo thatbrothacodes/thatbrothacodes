@@ -6,6 +6,11 @@ html, body {
     flex-direction: column;
 }
 
+#content {
+    display: flex;
+    flex: 1 0 auto;
+}
+
 .content-section {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -63,6 +68,10 @@ footer {
     margin-bottom: 30px;
 }
 
+.profile > div:nth-of-type(5) {
+    margin-top: 20px;
+}
+
 .profile > div:last-of-type {
     margin-top: 20px;
 }
@@ -78,7 +87,7 @@ section.content {
 
 section.navigation {
     background-color: #fcb60c;
-    height: 50px;
+    height: 59px;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5), 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 }
 

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> lang="en">
     <head>
         <title>thatbrothacodes</title>
+        <!-- <title><?php wp_title(); ?></title> -->
         <meta charset="utf-8">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
         <link href="css/mdb.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="styles.css">
+
+        <!-- <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+        <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+        <?php wp_head(); ?> -->
 
         <script type="text/javascript" src="js/mdb.min.js" ></script>
     </head>
@@ -18,9 +26,29 @@
         </header>
         <!-- Navbar -->
         <section class="navigation">
-            <div class="row">
-                <div class="col-md-9 offset-md-3">
-                    
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-3">
+                        <!-- Navbar -->
+                        <nav class="navbar navbar-expand-lg navbar-light text-dark">
+                            <!-- Container wrapper -->
+                            <div class="container-fluid">
+                                <!-- Toggle button -->
+                                <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-mdb-toggle="collapse"
+                                    data-mdb-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                            </div>
+                            <!-- Container wrapper -->
+                        </nav>
+                        <!-- Navbar -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -39,6 +67,7 @@
                             <div>Experienced developer across the entire stack. Cloud architect with process automation
                                 and site reliability. Mountain biker, snowboarder, chef and investor.
                             </div>
+                            <div>thatbrothacodes@gmail.com</div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
@@ -47,10 +76,6 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div>
-                
-            </div>
-        </footer>
+        <?php wp_footer(); ?>
     </body>
 </html>
