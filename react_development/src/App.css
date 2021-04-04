@@ -46,6 +46,11 @@ footer {
   box-shadow: initial;
 }
 
+.profile.content {
+  padding-top: 60px;
+  height: initial;
+}
+
 .profile {
   background-color: #000000;
   color: #ffffff;
